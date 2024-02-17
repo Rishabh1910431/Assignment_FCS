@@ -1,7 +1,7 @@
 git checkout -b branch2
-echo "Content of file4" > file4
-git add file4
-git commit -m "Add file4 to branch2"
-
-echo "Modified content of file4" > file4
+touch file4
+git add . 
+git commit -m "created branch2 and added file4"
+echo 'file4'>>file4
+git stash
 git checkout main
